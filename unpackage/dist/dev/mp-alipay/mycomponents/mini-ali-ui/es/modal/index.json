@@ -1,7 +1,0 @@
-{
-  "component": true,
-  "usingComponents": {
-    "button": "../button/index",
-    "am-icon": "../am-icon/index"
-  }
-}

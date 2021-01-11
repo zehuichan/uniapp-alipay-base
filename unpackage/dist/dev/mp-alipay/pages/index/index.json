@@ -1,6 +1,0 @@
-{
-  "defaultTitle": "uni-app",
-  "usingComponents": {
-    "ali-title": "/mycomponents/mini-ali-ui/es/title/index"
-  }
-}
