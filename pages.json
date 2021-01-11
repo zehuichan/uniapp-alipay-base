@@ -1,0 +1,111 @@
+{
+  "pages": [
+    //pages数组中第一项表示应用启动页，参考：https://uniapp.dcloud.io/collocation/pages
+    {
+      "path": "pages/tabs/components/index",
+      "style": {
+        "navigationBarTitleText": "组件"
+      }
+    },
+    {
+      "path": "pages/tabs/api/index",
+      "style": {
+        "navigationBarTitleText": "接口"
+      }
+    }
+  ],
+  "tabBar": {
+    "color": "#2e2f30",
+    "selectedColor": "#c03131",
+    "borderStyle": "black",
+    "backgroundColor": "#ffffff",
+    "list": [
+      // tabBar
+      {
+        "pagePath": "pages/tabs/components/index",
+        "iconPath": "static/tabs/tab-1.png",
+        "selectedIconPath": "static/tabs/tab-1-selected.png",
+        "text": "组件"
+      },
+      {
+        "pagePath": "pages/tabs/api/index",
+        "iconPath": "static/tabs/tab-2.png",
+        "selectedIconPath": "static/tabs/tab-2-selected.png",
+        "text": "接口"
+      }
+    ]
+  },
+  "globalStyle": {
+    "navigationBarTitleText": "uniapp-alipay",
+    "usingComponents": {
+      // mini-ali-ui v1.2.4 2020-11-21
+      // 这里为方便，全局引入了所有组件，也可以在某个page下单独引用某个组件
+      // 布局导航
+      "container": "/mycomponents/mini-ali-ui/es/container/index",
+      "ali-title": "/mycomponents/mini-ali-ui/es/title/index",
+      "list": "/mycomponents/mini-ali-ui/es/list/index",
+      "list-item": "/mycomponents/mini-ali-ui/es/list/list-item/index",
+      "list-secondary": "/mycomponents/mini-ali-ui/es/list/list-secondary/index",
+      "tabs": "/mycomponents/mini-ali-ui/es/tabs/index",
+      "tab-content": "/mycomponents/mini-ali-ui/es/tabs/tab-content/index",
+      "vtabs": "/mycomponents/mini-ali-ui/es/vtabs/index",
+      "vtab-content": "/mycomponents/mini-ali-ui/es/vtabs/vtab-content/index",
+      "card": "/mycomponents/mini-ali-ui/es/card/index",
+      "coupon": "/mycomponents/mini-ali-ui/es/coupon/index",
+      "grid": "/mycomponents/mini-ali-ui/es/grid/index",
+      "steps": "/mycomponents/mini-ali-ui/es/steps/index",
+      "footer": "/mycomponents/mini-ali-ui/es/footer/index",
+      "terms": "/mycomponents/mini-ali-ui/es/terms/index",
+      "flex": "/mycomponents/mini-ali-ui/es/flex/index",
+      "flex-item": "/mycomponents/mini-ali-ui/es/flex/flex-item/index",
+      "collapse": "/mycomponents/mini-ali-ui/es/collapse/index",
+      "collapse-item": "/mycomponents/mini-ali-ui/es/collapse/collapse-item/index",
+
+      // 操作浮层
+      "popover": "/mycomponents/mini-ali-ui/es/popover/index",
+      "popover-item": "/mycomponents/mini-ali-ui/es/popover/popover-item/index",
+      "filter": "/mycomponents/mini-ali-ui/es/filter/index",
+      "filter-item": "/mycomponents/mini-ali-ui/es/filter/filter-item/index",
+      "modal": "/mycomponents/mini-ali-ui/es/modal/index",
+      "popup": "/mycomponents/mini-ali-ui/es/popup/index",
+
+      // 结果类
+      "page-result": "/mycomponents/mini-ali-ui/es/page-result/index",
+      "message": "/mycomponents/mini-ali-ui/es/message/index",
+
+      // 提示引导
+      "tips-dialog": "/mycomponents/mini-ali-ui/es/tips/tips-dialog/index",
+      "tips-plain": "/mycomponents/mini-ali-ui/es/tips/tips-plain/index",
+      "notice": "/mycomponents/mini-ali-ui/es/notice/index",
+      "badge": "/mycomponents/mini-ali-ui/es/badge/index",
+      "tag": "/mycomponents/mini-ali-ui/es/tag/index",
+      "mask": "/mycomponents/mini-ali-ui/es/mask/index",
+      "guide": "/mycomponents/mini-ali-ui/es/guide/index",
+      "avatar": "/mycomponents/mini-ali-ui/es/avatar/index",
+
+      // 表单类
+      "input-item": "/mycomponents/mini-ali-ui/es/input-item/index",
+      "verify-code": "/mycomponents/mini-ali-ui/es/verify-code/index",
+      "picker-item": "/mycomponents/mini-ali-ui/es/picker-item/index",
+      "long-password": "/mycomponents/mini-ali-ui/es/long-password/index",
+      "multi-liner": "/mycomponents/mini-ali-ui/es/multi-liner/index",
+      "amount-input": "/mycomponents/mini-ali-ui/es/amount-input/index",
+      "button": "/mycomponents/mini-ali-ui/es/button/index",
+      "am-switch": "/mycomponents/mini-ali-ui/es/am-switch/index",
+      "search-bar": "/mycomponents/mini-ali-ui/es/search-bar/index",
+      "am-radio": "/mycomponents/mini-ali-ui/es/am-radio/index",
+      "am-checkbox": "/mycomponents/mini-ali-ui/es/am-checkbox/index",
+
+      // 手势类
+      "swipe-action": "/mycomponents/mini-ali-ui/es/swipe-action/index",
+
+      // 其他
+      "pagination": "/mycomponents/mini-ali-ui/es/pagination/index",
+      "calendar": "/mycomponents/mini-ali-ui/es/calendar/index",
+      "stepper": "/mycomponents/mini-ali-ui/es/stepper/index",
+      "am-icon": "/mycomponents/mini-ali-ui/es/am-icon/index",
+      "alphabet": "/mycomponents/mini-ali-ui/es/list/alphabet/index",
+      "loading": "/mycomponents/mini-ali-ui/es/loading/index"
+    }
+  }
+}

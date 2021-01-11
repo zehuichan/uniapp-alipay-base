@@ -1,0 +1,17 @@
+<view class="am-badge {{className}} {{!$slots.inner ? 'am-badge-not-a-wrapper' : ''}}">
+  <view
+    class="am-badge-text
+    {{text.toString().length > 1 ? 'am-badge-double' : ''}}
+    {{withArrow && direction === 'right' ? 'am-badge-text-arrow-right am-badge-text-right' : ''}}
+    {{withArrow && direction === 'left' ? 'am-badge-text-arrow-left am-badge-text-left' : ''}}
+    {{withArrow && direction === 'middle' ? 'am-badge-text-middle' : ''}}
+    {{!withArrow || direction === '' ? 'am-badge-text-left' : ''}}
+    {{stroke?'am-badge-stroke':''}}"
+    a:if="{{!dot}}">
+    <text class="am-badge-text-inner am-badge-text-inner-absolute">{{typeof text === 'number' && text > overflowCount ? '···' : text }}</text>
+    <text class="am-badge-text-inner am-badge-text-inner-opacity">{{typeof text === 'number' && text > overflowCount ? '···' : text }}</text>
+    <view a:if="{{withArrow && direction ==='middle'}}" class="am-badge-arrow {{stroke?'am-badge-stroke':''}}"/>
+  </view>
+  <view class="am-badge-text is-dot am-badge-text-left {{stroke?'am-badge-stroke':''}}" a:if="{{dot}}"></view>
+  <slot name="inner" />
+</view>

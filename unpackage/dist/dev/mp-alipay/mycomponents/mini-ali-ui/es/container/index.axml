@@ -1,0 +1,32 @@
+<view class="am-container {{className}}">
+  <block a:if="{{title !== ''}}">
+    <title slot="header"
+      hasLine="true"
+      showIcon="{{thumb !== ''? true : false}}"
+      iconURL="{{thumb}}"
+      type="{{icon === '' ? 'custom' : icon}}"
+      onActionTap="onTitleClick"
+    >
+      {{title}}
+      <view a:if="{{icon === ''}}" slot="operation">
+        <slot name="operation">{{custom}}</slot>
+      </view>
+    </title>
+  </block>
+  <block a:else>
+    <slot name="header"></slot>
+  </block>
+  <view class="am-container-content-box">
+    <view a:if="{{type === 'line'}}" class="am-container-content">
+      <slot></slot>
+    </view>
+    <view a:elif="{{type === 'onewithtwo'}}" class="am-container-content-grid">
+      <slot name="first"></slot>
+      <view class="am-container-content-grid-sub">
+        <slot name="second"></slot>
+        <slot name="third"></slot>
+      </view>
+    </view>
+  </view>
+  <slot name="footer"></slot>
+</view>

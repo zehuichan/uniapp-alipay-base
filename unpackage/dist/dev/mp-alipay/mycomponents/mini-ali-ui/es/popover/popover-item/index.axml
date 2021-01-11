@@ -1,0 +1,23 @@
+<view class="am-popover-item {{className}}" 
+  hover-class="am-popover-item-hover"
+  hover-start-time="20"
+  hover-stay-time="20"
+  onTap="onItemClick">
+  <view class="am-popover-item-wrapper">
+    <view class="am-popover-item-icon-holder am-popover-item-ver-center" 
+      a:if="{{iconType || iconURL}}">
+      <am-icon type="{{iconType}}" 
+        a:if="{{iconType}}"
+        size="{{iconSize}}" />
+      <image 
+        class="am-popover-item-icon-holder"
+        a:elif="{{iconURL}}"
+        src="{{iconURL}}"
+        mode='aspectFit'
+      />
+    </view>
+    <view class="am-popover-item-slot-holder am-popover-item-ver-center">
+      <slot />
+    </view>
+  </view>
+</view>

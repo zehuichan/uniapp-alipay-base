@@ -1,0 +1,1 @@
+.am-flexbox-item{box-sizing:border-box;flex:1;min-width:12px;margin-left:8px;margin-left:var(--am-flexbox-item-marginL,8px)}.am-flexbox-item:first-child{margin-left:0}
